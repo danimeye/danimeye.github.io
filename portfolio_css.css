@@ -1,0 +1,77 @@
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica";
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 0;
+    text-align: right;
+
+}
+
+
+.indexBody { 
+    height:100%;
+    width:100%;
+    background-image:url(index_background.png);/*your background image*/  
+    background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+    background-size:cover;/*this sets the image to fullscreen covering the whole screen*/ 
+}
+
+.showsBody {
+    height:100%;
+    width:100%;
+    background-image:url(shows_background.jpeg);/*your background image*/  
+    background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+    background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+    font-family: "Helvetica";
+}
+
+.merchBody {
+    background-color: rgb(87, 119, 148);
+    font-family: Helvetica;
+    color: white;
+    margin-left: 20px
+}
+
+.merchBody section {
+    margin-left: 20px
+}
+
+.musicBody {
+    background-color: rgb(87, 119, 148);
+}
+
+.musicBody section img {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.musicBody section ul {
+    color: white;
+    font-family: Helvetica;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.musicBody section h2 {
+    color: white;
+    font-family: Helvetica;
+    margin-left: 20px;
+}
+
+
+h1 {
+    font-family: Helvetica;
+    color: white;
+    margin-left: 20px;
+}
+
+
+p {
+    color: white 
+} 
+
