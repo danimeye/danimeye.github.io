@@ -18,7 +18,6 @@ nav ul li{
     background-image:url(../images/index_background.png);/*your background image*/  
     background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
     background-size:cover;/*this sets the image to fullscreen covering the whole screen*/ 
-    background-position:center;
 }
 
 .showsBody {
