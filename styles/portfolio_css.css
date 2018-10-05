@@ -95,13 +95,12 @@ nav ul li{
     margin-right: 100px;
 }
 
-.merch_container div{
+.merch_container {
     display: flex;
     display: block;
     flex-direction: row; 
     font-family: "Abel";
     color: white;
-    padding: 20px;
 }
 
 /* .merch_container img:active {
