@@ -3,74 +3,88 @@
 nav a {
     text-decoration: none;
     color: white;
+    
 }
 nav a.current:link, a.current:visited {
     text-transform: uppercase;
 }
 nav a:hover {
-    text-decoration: underline;
+    text-transform:uppercase;
 }
 
 nav ul li{
     display: inline-block;
-    margin-left: 30px;
+    padding-inline-start: 0px;
+    padding: 10px;
 }
+
 
 .home_button a {
     display: block;
     text-decoration: none;
     color: white;
     font-size: 50px;
+    /* margin-top: 20px; */
 }
 
 .indexBody {
-    background-image:url(../images/index_background.png);/*your background image*/  
+    background-image:url(../images/index_background_mobile2.png);/*your background image*/  
     background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
     background-size:cover;/*this sets the image to fullscreen covering the whole screen*/ 
+    background-position: center;
+    height: 100vh;
 }
 
-.header_container {
+
+
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     font-family: "Righteous";
-    align-items: center;
-    padding: 30px;
+    text-align: center;
+
 }
 
 .showsBody {
-    background-image:url(../images/background_option.png);/*your background image*/  
+    background-image:url(../images/background_option.png);/*your background image*/ 
+    background-attachment: fixed; 
     background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
     background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
     background-position:center;
+    height: 1750px;
 }
 
-.main { 
+/* .main { 
     display: flex;
     display: inline-block;
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
-} 
+}  */
 
 .shows_container {
     display: flex;
+    display: block;
     flex-direction: column;
     color: white;
     font-family: "Abel";
+    text-align: center; 
+    align-items: center;
+}
+.shows_container div{
+    padding: 15px;
 }
 /* .main p{
     margin-left:100px;
 } */
 
-.main_music {
+/* .main_music {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+    align-content: center;
+} */
 
 .music_container {
     display: flex;
@@ -78,39 +92,68 @@ nav ul li{
     flex-wrap: wrap;
 }
 
+
 .musicBody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
     background-color: rgb(87, 119, 148);
     color: white;
     font-family: "Abel";
 }
 
+h1, h2 {
+    font-family: "Abel";
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 30px;
+}
 
 .merchBody {
     background-color: black;
 }
-.main_merch {
+/* .main_merch {
     display: flex;
-    display: block;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.merch_container {
-    display: flex;
+    flex-direction: column;
+    align-content: center;
     display: block;
     flex-direction: row; 
     font-family: "Abel";
     color: white;
+} */
+
+.merch_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Abel";
+    color: white;
+    align-items: space-between;
+}
+
+.merch_container div {
+    padding: 15px;
+}
+
+.merch_container div img {
+    padding: 10px;
 }
 
 /* .merch_container img:active {
     
 } */
 
-h1 {
+/* h1 {
     font-family: "Abel";
     color: white;
-}
+    text-align: center;
+} */
 
 footer {
     display: flex;
@@ -125,11 +168,126 @@ footer {
     font-size: 30px;
 }
 
-footer a:visited{
+footer a {
     color: white;
     text-decoration: none;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 footer i:hover{
     transform: rotate(20deg);
 }
+
+/* For mobile phones */
+/* [class*="col-"] {
+
+} */
+
+@media only screen and (min-width: 992px) {
+    .indexBody {
+        background-image:url(../images/index_background.png);/*your background image*/  
+        background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+        background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+        height: 100vh;
+    }
+
+    .musicBody {
+        background-image:url(../images/music_bg.jpg);/*your background image*/  
+        background-attachment: fixed;
+        background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+        background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+        background-position:center;
+        height: 100%;
+    }
+    .music_container div {
+        display: flex;
+        display: inline-block;
+        flex-direction: row;
+
+    }
+    nav ul li{
+        display: inline-block;
+        /* margin-left: 30px; */
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Righteous";
+        align-items: center;
+        padding: 30px;
+        /* width: 100%;
+        top: 0;
+        position: fixed;
+        overflow: hidden; */
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .showsBody {
+        background-image:url(../images/background_option.png);/*your background image*/ 
+        background-attachment: fixed; 
+        background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+        background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+        background-position:center;
+        height: 100%;
+    }
+    .shows_container {
+        display: flex;
+        display: block;
+        flex-direction: row;
+        color: white;
+        font-family: "Abel"; 
+        text-align: left;
+        margin-left: 30px;
+    }
+    .merch_container div{
+        display: flex;
+        display: block;
+        flex-direction: row; 
+        font-family: "Abel";
+        color: white;
+    }
+
+    
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .main_container div{
+        display: flex;
+        display: inline;
+        flex-direction: row; 
+        font-family: "Abel";
+        color: white; 
+    }
+    nav ul li{
+        display: inline-block;
+        /* margin-left: 30px; */
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Righteous";
+        align-items: center;
+        padding: 30px;
+    }
+    .merch_container {
+        color: black;
+    }
+    .merchBody {
+        background-color:white;
+    }
+    .home_button a {
+        color: black;
+    }
+    nav a {
+        color: black; 
+    }
+} 
+
