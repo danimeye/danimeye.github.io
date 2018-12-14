@@ -1,120 +1,139 @@
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang='en'>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
         <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="styles/html5reset-1.6.1.css"> <!-- default stylesheet -->
-        <link rel="stylesheet" type="text/css" href="styles/portfolio_css.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU' crossorigin='anonymous'>
+        <link rel='stylesheet' type='text/css' href='styles/html5reset-1.6.1.css'> <!-- default stylesheet -->
+        <link rel='stylesheet' type='text/css' href='styles/portfolio_css.css'>
 
         <title>Music</title>
     </head>
-    <body class = "musicBody">
+    <body class = 'musicBody'>
+        <a href="#album0" class="skip">Skip to main content</a>
         <header>
-            <div class = "home_button">
-                <a href = "index.html">Tennis</a>
+            <div class = 'home_button'>
+                <a href = 'index.html'>Tennis</a>
             </div> 
             <nav>
                  <ul> 
-                        <!--  -->
-                        <li><a href = "music.html" class="current">Music</a></li>
-                        <li><a href = "shows.html">Shows</a></li>
-                        <li><a href = "merch.html">Merch</a></li>
-                     </ul>
+                    <li><a href = 'music.html' class='current'>Music</a></li>
+                    <li><a href = 'shows.html'>Shows</a></li>
+                    <li><a href = 'merch.html'>Merch</a></li>
+                </ul>
             </nav>
         </header>
-        <div class = "main_music">
+
+        <main>
             <h1>Music</h1>
-            
-            <div class = "music_container">
-                <div> 
-                    <h2>Yours Conditionally</h2>
-                    <img src = "images/album1_cover.png" alt = "Album cover for 'Yours Conditionally' by Tennis"/>
-                    <!-- <ul>
-                        <li>In the Morning I'll Be Better</li>
-                        <li>My Emotions are Blinding</li>
-                        <li>Fields of Blue</li>
-                        <li>Ladies Don't Play Guitar</li>
-                        <li>Matrimony</li>
-                        <li>Baby Don't Believe</li>
-                        <li>Please Don't Ruin This for Me</li>
-                        <li>10 Minutes 10 Years</li>
-                        <li>Modern Woman</li>
-                        <li>Island Music</li>
-                        <li>Ladies Don't Play Guitar</li>
-                    </ul> -->
-                </div>
 
-                <div>
-                    <h2>Ritual in Repeat</h2>
-                    <img src = "images/album2_cover.png" alt = "Album cover for 'Ritual in Repeat' by Tennis"/>
-                    <!-- <ul> -->
-                        <!-- <li>Night Vision</li>
-                        <li>Never Work for Free</li>
-                        <li>Needle And A Knife</li>
-                        <li>I'm Callin'</li>
-                        <li>Bad Girls</li>
-                        <li>Timothy</li>
-                        <li>Viv Without The N</li>
-                        <li>Wounded Heart</li>
-                        <li>This Isn't My Song</li>
-                        <li>Solar On The Rise</li>
-                        <li>Meter and Line</li>
-                    </ul> -->
-                </div>
+            <div class = 'music_container container'></div>
+        </main>
 
-                <div>
-                    <h2>Young & Old</h2>
-                    <img src = "images/album3_cover.png" alt = "Album cover for 'Young & Old' by Tennis"/>
-                    <!-- <ul>
-                        <li>It All Feels The Same</li>
-                        <li>Origins</li>
-                        <li>My Better Self</li>
-                        <li>Traveling</li>
-                        <li>Petition</li>
-                        <li>Robin</li>
-                        <li>High Road</li>
-                        <li>Dreaming</li>
-                        <li>Never to Part</li>
-                        <li>Deep in the Woods (Bonus Track)</li>
-                        <li>Vegas (Bonus Track)</li>
-                    </ul> -->
-                </div>
+        <footer>
+            <a href = 'https://twitter.com/TennisInc' aria-label='Twitter icon link' target='_blank'>
+                <i class='fab fa-twitter'></i>
+            </a>
+            <a href = 'https://www.instagram.com/tennisinc/?hl=en' aria-label='Instagram icon link' target='_blank'>
+                <i class='fab fa-instagram'></i>
+            </a>
+            <a href = 'https://open.spotify.com/artist/1ybAN3utgdoUL1MUCtH4QM?si=KsHK6o8WR5aTtnI2ov_DFQ' aria-label='Spotify icon link' target='_blank'>
+                <i class='fab fa-spotify'></i>
+            </a>
+        </footer>
 
-                <div>
-                    <h2>Cape Dory</h2>
-                    <img src = "images/album4_cover.png" alt = "Album cover for 'Cape Dory' by Tennis"/>
-                    <!-- <ul>
-                        <li>Take Me Somewhere</li>
-                        <li>Long Boat Pass</li>
-                        <li>Cape Dory</li>
-                        <li>Marathon</li>
-                        <li>Bimini Bay</li>
-                        <li>South Carolina</li>
-                        <li>Pigeon</li>
-                        <li>Seafarer</li>
-                        <li>Baltimore</li>
-                        <li>Waterbirds</li>
-                    </ul> -->
-                </div>
+        <script>
+            var albums = [
+                {
+                    title: 'Yours Conditionally',
+                    spotifyUrl: 'https://open.spotify.com/embed/album/2ZV63aOqkSh0l49vmvjLOn',
+                    albumCover: 'images/album1_cover.png',
+                    ariaLabel: "Press Enter to listen to 'Yours Conditionally'"
+                }, {
+                    title: 'Ritual in Repeat',
+                    spotifyUrl: 'https://open.spotify.com/embed/album/713bra8VewzJiffy8GOjiO',
+                    albumCover: 'images/album2_cover.png',
+                    ariaLabel: "Press Enter to listen to 'Ritual in Repeat'"
+                }, {
+                    title: 'Young and Old',
+                    spotifyUrl: 'https://open.spotify.com/embed/album/0iYMIu3RfxzlhcJ9oK6TvB',
+                    albumCover: 'images/album3_cover.png',
+                    ariaLabel: "Press Enter to listen to 'Young and Old'"
+                }, {
+                    title: 'Cape Dory',
+                    spotifyUrl: 'https://open.spotify.com/embed/album/7EdH3HFfkPD44j2uh4HYNr',
+                    albumCover: 'images/album4_cover.png',
+                    ariaLabel: "Press Enter to listen to 'Cape Dory'"
+                }, {
+                    title: 'We Can Die Happy',
+                    spotifyUrl: 'https://open.spotify.com/embed/album/1JWOlkTK241186WGMLZ7Yd',
+                    albumCover: 'images/album5_cover.png',
+                    ariaLabel: "Press Enter to listen to 'We Can Die Happy'"
+                }
+            ]
+
+            var music_container = document.getElementsByClassName('music_container')[0];
+
+            for (let i = 0; i < albums.length; i++) {
+                var album = document.createElement('div');
+                var playButton = document.createElement('div');
+                var title = document.createElement('h2');
+                var cover = document.createElement('img')
+                var player = document.createElement('iframe')
                 
-                <div>
-                    <h2> We Can Die Happy</h2>
-                    <img src = "images/album5_cover.png" alt = "Album cover for 'We Can Die Happy' by Tennis"/>
-                    <!-- <ul>
-                        <li>No Exit</li>
-                        <li>Born to Be Needed</li>
-                        <li>I Miss That Feeling</li>
-                        <li>Diamond Rings</li>
-                        <li>Bimini Bay</li>
-                        <li>Building God</li>
-                    </ul> -->
-                </div>
-            </div>
-        </div>
+                album.setAttribute('class', 'album');
+                album.setAttribute('id', 'album' + i);
+                playButton.setAttribute('class', 'play_button');
+                playButton.setAttribute('role', 'button');
+                playButton.setAttribute('tabindex', '0');
+                playButton.setAttribute('onkeypress', 'toggleSpotify(' + i + ')');
+                playButton.setAttribute('onclick', 'toggleSpotify(' + i + ')');
+                playButton.setAttribute('aria-label', 'toggleSpotify(' + i + ')');
+                cover.setAttribute('src', albums[i].albumCover);
+                cover.setAttribute('alt', 'Album cover for \'' + albums[i].title + '\' by Tennis');
+                cover.setAttribute('class', 'cover');
+                cover.setAttribute('onclick', 'toggleSpotify(' + i + ')');
+                player.setAttribute('src', albums[i].spotifyUrl);
+                player.setAttribute('width', '324px');
+                player.setAttribute('height', '324px');
+                player.setAttribute('frameborder', '0');
+                player.setAttribute('allowtransparency', 'true');
+                player.setAttribute('allow', 'encrypted-media');
+                player.setAttribute('class', 'spot_player');
 
+                title.innerHTML = albums[i].title;
+                
+                playButton.appendChild(cover);
+                album.appendChild(title);
+                album.appendChild(playButton);
+                album.appendChild(player);
+
+                music_container.appendChild(album);
+            }
+
+            function toggleSpotify(index) {
+                var all_albums = document.getElementsByClassName('album');
+
+                for (var i = 0; i < all_albums.length; i++) {
+                    var this_album = all_albums[i];
+                    var this_player = this_album.getElementsByClassName('spot_player')[0];
+                    var this_cover = this_album.getElementsByClassName('cover')[0];
+                    
+                    if (i === index) {
+                        this_player.style.display = 'block';
+                        this_cover.style.display = 'none';
+                    }
+                    else {
+                        this_player.style.display = 'none';
+                        this_cover.style.display = 'block';    
+                    }
+                }
+            }
+        
+        </script>
 
     </body>
     </html>
