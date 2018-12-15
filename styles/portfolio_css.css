@@ -50,6 +50,27 @@ nav ul li{
     /* margin-top: 20px; */
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: "Righteous";
+    text-align: center;
+
+}
+
+h1, h2 {
+    font-family: "Abel";
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+    padding-bottom: 60px;
+}
+
+/* styling for landing page starts here */
 .indexBody {
     background-image: url(../images/index_background_mobile2.png);/*your background image*/  
     background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
@@ -59,15 +80,7 @@ nav ul li{
 }
 
 
-
-header {
-    display: flex;
-    flex-direction: column;
-    font-family: "Righteous";
-    text-align: center;
-
-}
-
+/* styling for Shows page starts here */
 .showsBody {
     background-image:url(../images/background_option.png);/*your background image*/ 
     background-attachment: fixed; 
@@ -108,6 +121,7 @@ header {
 
 }
 
+/* styling for Music page starts here */
 .music_container {
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -143,18 +157,7 @@ header {
 }
 
 
-h1, h2 {
-    font-family: "Abel";
-    color: white;
-    text-align: center;
-    font-size: 18px;
-}
-
-h1 {
-    font-size: 30px;
-    padding-bottom: 60px;
-}
-
+/* styling for Merch page starts here */
 .merchBody {
     background-color: black;
 }
@@ -233,10 +236,7 @@ footer i:hover{
     transform: rotate(20deg);
 }
 
-/* For mobile phones */
-/* [class*="col-"] {
 
-} */
 
 /*For computer screens*/
 @media only screen and (min-width: 992px) {

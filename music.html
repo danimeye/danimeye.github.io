@@ -13,7 +13,7 @@
         <title>Music</title>
     </head>
     <body class = 'musicBody'>
-        <a href="#album0" class="skip">Skip to main content</a>
+        <a href="#skipId" class="skip">Skip to main content</a>
         <header>
             <div class = 'home_button'>
                 <a href = 'index.html'>Tennis</a>
@@ -82,16 +82,17 @@
                 var playButton = document.createElement('div');
                 var title = document.createElement('h2');
                 var cover = document.createElement('img')
-                var player = document.createElement('iframe')
+                var player = document.createElement('iframe');
                 
                 album.setAttribute('class', 'album');
                 album.setAttribute('id', 'album' + i);
                 playButton.setAttribute('class', 'play_button');
                 playButton.setAttribute('role', 'button');
                 playButton.setAttribute('tabindex', '0');
+                playButton.setAttribute('id', 'skipId')
                 playButton.setAttribute('onkeypress', 'toggleSpotify(' + i + ')');
                 playButton.setAttribute('onclick', 'toggleSpotify(' + i + ')');
-                playButton.setAttribute('aria-label', 'toggleSpotify(' + i + ')');
+                playButton.setAttribute('aria-label', albums[i].ariaLabel);
                 cover.setAttribute('src', albums[i].albumCover);
                 cover.setAttribute('alt', 'Album cover for \'' + albums[i].title + '\' by Tennis');
                 cover.setAttribute('class', 'cover');
