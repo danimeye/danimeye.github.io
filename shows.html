@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="styles/portfolio_css.css">
     <title>Shows</title>
 </head>
-<body class = "showsBody">
+<body class = "showsBody" aria-label = "Background picture of the band members">
     <a href="#buy_tickets0" class="skip">Skip to main content</a>
     <header>
         <div class = "home_button">
@@ -87,19 +87,16 @@
         for (let i = 0; i < shows.length; i++) {
             var show = document.createElement('div');
             var details = document.createElement('div');
-            var tickets = document.createElement('form')
-            var ticket_button = document.createElement('button')
+            var ticket_button = document.createElement('a')
             var date = document.createElement('p');
             var venue = document.createElement('p');
             var city = document.createElement('p');
 
             show.setAttribute('class', 'show');
             details.setAttribute('class', 'show_details');
-            tickets.setAttribute('class', 'ticket');
-            tickets.setAttribute('method', 'get');
-            tickets.setAttribute('action', 'https://www.ticketmaster.com/tennis-tickets/artist/1505380');
-            ticket_button.setAttribute('type', "submit");
+            ticket_button.setAttribute('href', 'https://www.ticketmaster.com/tennis-tickets/artist/1505380');
             ticket_button.setAttribute('id', 'buy_tickets' + i);
+            ticket_button.setAttribute('class', 'tickets')
             ticket_button.setAttribute('aria-label', 'Tickets for ' + shows[i].city + ' on ' + shows[i].date);
 
             date.innerHTML = shows[i].date;
@@ -111,10 +108,10 @@
             details.appendChild(venue);
             details.appendChild(city);
 
-            tickets.appendChild(ticket_button);
+            // tickets.appendChild(ticket_button);
 
             show.appendChild(details);
-            show.appendChild(tickets);
+            show.appendChild(ticket_button);
 
             shows_container.appendChild(show);
         }
