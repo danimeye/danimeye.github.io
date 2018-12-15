@@ -96,6 +96,18 @@ header {
     padding: 15px;
 }
 
+.show form button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Abel";
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 28px;
+
+}
+
 .music_container {
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -179,7 +191,7 @@ h1 {
 
 .item {
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.824);
     height: 300px;
     padding: 30px;
     margin: 0 10px 50px;
