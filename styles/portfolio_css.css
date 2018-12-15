@@ -58,17 +58,34 @@ header {
 
 }
 
-h1, h2 {
+h1 {
     font-family: "Abel";
     color: white;
     text-align: center;
-    font-size: 18px;
-}
-
-h1 {
     font-size: 30px;
     padding-bottom: 60px;
 }
+
+h2 {
+    font-family: "Abel";
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.album h2 {
+    color: white;
+    text-align: center;
+}
+
+.index_container p {
+    font-family: "Abel";
+    font-size: 30px;
+    color: white;
+    /* border: solid;
+    padding: 10px; */
+}
+
 
 /* styling for landing page starts here */
 .indexBody {
@@ -76,7 +93,10 @@ h1 {
     background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
     background-size:cover;/*this sets the image to fullscreen covering the whole screen*/ 
     background-position: center;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -210,11 +230,6 @@ h1 {
     text-align: center;
     font-family: "Abel";
     color: black;
-}
-
-.index_footer {
-    position: fixed;
-    bottom: 0;
 }
 
 footer {
