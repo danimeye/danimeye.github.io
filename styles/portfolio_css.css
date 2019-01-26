@@ -93,7 +93,7 @@ h2 {
     background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
     background-size:cover;/*this sets the image to fullscreen covering the whole screen*/ 
     background-position: center;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,6 +141,10 @@ h2 {
     padding: 10px 28px;
     text-decoration: none;
 
+}
+
+.show_details {
+    padding-bottom: 20px;
 }
 
 /* styling for Music page starts here */
@@ -266,7 +270,7 @@ footer i:hover{
     }
 
     .musicBody {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/shows_landscape.png);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.598), rgba(0, 0, 0, 0.598)), url(../images/shows_landscape.png);
         background-attachment: fixed;
         background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
         background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
@@ -314,6 +318,7 @@ footer i:hover{
 
     .show_details {
         text-align: left;
+        padding-bottom: 0px;
     }
 
     #grid_everthing {
